@@ -1,6 +1,7 @@
 Ext.define('portofolio.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
+    
     requires: [
         'Ext.TitleBar'
     ],
@@ -15,8 +16,13 @@ Ext.define('portofolio.view.Main', {
                 xtype: 'blog'
             },
             {
+                xtype: 'twitter'
+            },
+            {
                 xtype: 'contactform'
             }
         ]
+    
     }
+
 });
