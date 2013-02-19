@@ -32,7 +32,7 @@ Ext.define('portofolio.view.Blog', {
                 }
             }
           }
-        },
+        }
       ]
     }
-})
+});

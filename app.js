@@ -6,15 +6,15 @@ Ext.Loader.setPath({
 //</debug>
 
 Ext.application({
-    controllers: ["Main"],
-
+    controllers: ['Main'],
+    
     name: 'portofolio',
 
     requires: [
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'Home', 'Contact', 'Twitter', 'Blog'],
+    views: ['Main', 'Home', 'Contact', 'Twitter', 'Blog', 'Timeline'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
