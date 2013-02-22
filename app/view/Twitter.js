@@ -10,11 +10,11 @@ Ext.define('portofolio.view.Twitter',{
         
          items: [        
             {
-                xtype: 'timeline'          
+                title: 'timeline'          
             },
             {
                 title: 'map'
-            },            
+            }   
          ]
     }
     

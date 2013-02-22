@@ -5,16 +5,15 @@ Ext.Loader.setPath({
 });
 //</debug>
 
-Ext.application({
-    controllers: ['Main'],
+Ext.application({    
+    name: 'portofolio',     
     
-    name: 'portofolio',
-
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
     ],
-
-    views: ['Main', 'Home', 'Contact', 'Twitter', 'Blog', 'Timeline'],
+    controllers: ['Main'],  
+    
+    views: ['Main', 'Home', 'Contact', 'Twitter', 'Blog'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -33,7 +32,7 @@ Ext.application({
         '1536x2008': 'resources/startup/1536x2008.png',
         '1496x2048': 'resources/startup/1496x2048.png'
     },
-
+    
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
