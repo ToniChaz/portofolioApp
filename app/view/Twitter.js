@@ -58,6 +58,17 @@ Ext.define('portofolio.view.Twitter',{
             useCurrentLocation: true,
             mapOptions: {
                     zoom: 12
+            },
+            listeners: {
+                maprender: function(extMapComponent, googleMapComp){
+                                  
+                    var marker = new google.maps.Marker({
+                         position: position = new google.maps.LatLng (extMapComponent._geo._latitude,extMapComponent._geo._longitude),
+                         map: googleMapComp
+                    });
+
+                    
+                }
             }
         }
       ]
