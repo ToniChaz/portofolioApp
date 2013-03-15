@@ -45,6 +45,7 @@ Ext.define('portofolio.view.Twitter',{
             
             proxy: {
                 type: 'ajax',
+                //url: 'http://api.twitter.com/1/users/show.json?screen_name=Toni_Chaz',
                 url: 'data.json',
                 reader: {
                     type: 'json'         
