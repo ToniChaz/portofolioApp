@@ -6,14 +6,12 @@ Ext.define('portofolio.view.Contact',{
     'Ext.form.FieldSet',
     'Ext.field.Email'
   ],
-  
   config: {
     title:'Contacto',
     iconCls: 'user',
-    url:'mail.php',
     
     scrollable: true,
-    styleHtmlContent: true,
+    styleHtmlContent: true,    
     
     items: [
       {
@@ -49,7 +47,16 @@ Ext.define('portofolio.view.Contact',{
           text: 'Enviar',
           ui: 'confirm',
           handler: function() {
-           this.up('contactform').submit();
+           this.up('contactform').submit({               
+               url: 'senchaMail.php', 
+               method: 'Post',
+                success: function() { 
+                    Ext.Msg.alert('Enviado');                   
+                }, failure: function() {
+                    Ext.Msg.alert("Rellena los campos!"); 
+                } 
+            });
+            //this.up('contactform').reset();
           }
          }
     ]
