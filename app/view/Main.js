@@ -19,6 +19,9 @@ Ext.define('portofolio.view.Main', {
                 xtype: 'twitter'
             },
             {
+                xtype: 'portofolio'
+            },
+            {
                 xtype: 'contactform'
             }
         ]

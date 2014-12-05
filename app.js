@@ -13,7 +13,7 @@ Ext.application({
     ],
     controllers: ['Main'],
     
-    views: ['Main', 'Home', 'Contact', 'Twitter', 'Blog'],
+    views: ['Main', 'Home', 'Contact', 'Twitter', 'Portofolio', 'Blog'],
 
     icon: {
         '57': 'resources/icons/Icon.png',

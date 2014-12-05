@@ -12,7 +12,7 @@ Ext.define('portofolio.controller.Main', {
         }
     },
         
-        showPost: function(list, index, element, record) {
+        showPost: function(record) {
             this.getBlog().push({
                 xtype: 'panel',
                 title: record.get('title'),

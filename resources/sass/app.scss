@@ -21,6 +21,8 @@ $base-gradient: 'glossy';
 
 // Your custom code goes here...
 @include pictos-iconmask('twitter2');
+@include pictos-iconmask('note2');
+@include pictos-iconmask('mail');
 
 .btnTweet{tex-decoration:none;color:#253944;}
 .tweetAvatar{float: left;margin: 2%;}

@@ -25,7 +25,6 @@ Ext.define('portofolio.view.Blog', {
             proxy: {
                 type: 'jsonp',
                 url: 'http://www.tonichaz.com/api/get_recent_posts/',
-                
                 reader: {
                     type: 'json',
                     rootProperty: 'posts'

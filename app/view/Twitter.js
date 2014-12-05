@@ -14,8 +14,8 @@ Ext.define('portofolio.view.Twitter',{
     
         items: [        
         {
-          xtype: 'list',
           title: 'Tweets',
+          xtype: 'list',
           itemTpl : [            
             '<div>',
             '<div>',
@@ -44,8 +44,8 @@ Ext.define('portofolio.view.Twitter',{
             ],
             
             proxy: {
-                type: 'ajax',
-                //url: 'http://api.twitter.com/1/users/show.json?screen_name=Toni_Chaz',
+                type: 'jsonp',
+                //url: 'http://api.twitter.com/1/statuses/user_timeline/Toni_Chaz.json?count=25&include_rts=1',
                 url: 'data.json',
                 reader: {
                     type: 'json'         

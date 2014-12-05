@@ -8,7 +8,7 @@ Ext.define('portofolio.view.Contact',{
   ],
   config: {
     title:'Contacto',
-    iconCls: 'user',
+    iconCls: 'mail',
     
     scrollable: true,
     styleHtmlContent: true,    
