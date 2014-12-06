@@ -4,4 +4,5 @@ nbproject/
 .directory
 #Sencha
 .sencha
+build/
 resources/sass/.sass-cache/
