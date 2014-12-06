@@ -33,13 +33,13 @@
         "fallback": []
     },
     "resources": [
-        "resources/images",
+        "resources/loading",
         "resources/icons",
         "resources/startup",
         "send-mail.php",
         "get-tweets.php",
-        "twitteroauth/twitteroauth",
-        "twitteroauth/OAuth"
+        "twitteroauth/twitteroauth.php",
+        "twitteroauth/OAuth.php"
     ],
     "ignore": [
         ".gitignore",
