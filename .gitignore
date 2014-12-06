@@ -2,3 +2,6 @@
 nbproject/
 #Linux Mint
 .directory
+#Sencha
+.sencha
+resources/sass/.sass-cache/
