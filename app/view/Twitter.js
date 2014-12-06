@@ -40,12 +40,15 @@ Ext.define('portofolio.view.Twitter',{
                 {
                     name: 'profile_image_url',
                     mapping: 'user.profile_image_url'
+                },
+                {
+                    name: "open_url",
+                    mapping: "entities.urls[0].url"
                 }
             ],
             
             proxy: {
                 type: 'ajax',
-                //url: 'http://api.twitter.com/1/statuses/user_timeline/Toni_Chaz.json?count=25&include_rts=1',
                 url: 'get-tweets.php',
                 reader: {
                     type: 'json'         

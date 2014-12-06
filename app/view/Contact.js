@@ -57,7 +57,6 @@ Ext.define('portofolio.view.Contact',{
                     Ext.Msg.alert("Rellena los campos!"); 
                 } 
             });
-            //this.up('contactform').reset();
           }
          }
     ]

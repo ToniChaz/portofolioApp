@@ -2,11 +2,15 @@ Ext.define('portofolio.controller.Main', {
     extend: 'Ext.app.Controller',
     config: {
         refs: {
-            blog: 'blog'
+            blog: 'blog',
+            twitter: 'twitter'
         },
         control: {
             'blog list': {
                 itemtap: 'showPost'
+            },
+            'twitter list': {
+                itemtap: 'openUrl'
             }
         }
     },
@@ -18,5 +22,8 @@ Ext.define('portofolio.controller.Main', {
             scrollable: true,
             styleHtmlContent: true
         });
+    },
+    openUrl: function (that, list, index, target) {
+        window.open(target.get('open_url'), '_blank');
     }
 });
