@@ -6,3 +6,5 @@ nbproject/
 .sencha
 build/
 resources/sass/.sass-cache/
+#Tweeter
+get-tweets.php
