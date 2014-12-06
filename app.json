@@ -1,15 +1,19 @@
 {
     "name": "portofolio",
     "indexHtmlPath": "index.html",
-    "url": null,     
+    "url": null,
     "js": [
         {
             "path": "touch/sencha-touch.js",
             "x-bootstrap": true
         },
         {
+            "path": "bootstrap.js",
+            "x-bootstrap": true
+        },
+        {
             "path": "app.js",
-            "bundle": true,  
+            "bundle": true,
             "update": "delta"
         }
     ],
@@ -40,5 +44,5 @@
     "archivePath": "archive",
     "requires": [
     ],
-    "id": "bb22f99c-159c-4c93-96af-7aafd1875f77"
+    "id": "a97ed5d0-b86b-4358-b37f-a99e56acc0ac"
 }

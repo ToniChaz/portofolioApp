@@ -10,13 +10,6 @@
     will need to resolve manually.
 */
 
-//<debug>
-Ext.Loader.setPath({
-    'Ext': 'touch/src',
-    'portofolio': 'app'
-});
-//</debug>
-
 Ext.application({    
     name: 'portofolio',     
     
