@@ -16,12 +16,12 @@ Ext.define('portofolio.view.Portofolio',{
         {
           xtype: 'list',
           title: 'Diseños',
-          html : 'Aqui van los diseños'
+          html : 'Coming Soon'
         },
         {
           xtype: 'list',
           title: 'Programacion',
-          html : 'Aqui van los trabajos de programacion'
+          html : 'Coming Soon'
         }
       ]
     }    

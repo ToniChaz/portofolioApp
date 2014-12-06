@@ -44,9 +44,9 @@ Ext.define('portofolio.view.Twitter',{
             ],
             
             proxy: {
-                type: 'jsonp',
+                type: 'ajax',
                 //url: 'http://api.twitter.com/1/statuses/user_timeline/Toni_Chaz.json?count=25&include_rts=1',
-                url: 'data.json',
+                url: 'get-tweets.php',
                 reader: {
                     type: 'json'         
                 }

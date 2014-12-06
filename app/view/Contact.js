@@ -48,7 +48,7 @@ Ext.define('portofolio.view.Contact',{
           ui: 'confirm',
           handler: function() {
            this.up('contactform').submit({               
-               url: 'senchaMail.php', 
+               url: 'send-mail.php', 
                method: 'Post',
                 success: function() { 
                     Ext.Msg.alert('Enviado');
