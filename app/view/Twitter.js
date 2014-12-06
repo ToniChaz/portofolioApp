@@ -9,7 +9,7 @@ Ext.define('portofolio.view.Twitter',{
     ],
   config: {
     title:'Twitter',
-    iconCls: 'twitter2',
+    iconCls: 'bird',
     
     
         items: [        

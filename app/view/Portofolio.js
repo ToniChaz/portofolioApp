@@ -9,7 +9,7 @@ Ext.define('portofolio.view.Portofolio',{
     ],
   config: {
     title:'Portofolio',
-    iconCls: 'note2',
+    iconCls: 'port',
     
     
         items: [        

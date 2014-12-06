@@ -14,7 +14,10 @@
  *             ],
  *
  *             // we can use the hasOne shortcut on the model to create a hasOne association
- *             associations: { type: 'hasOne', model: 'Address' }
+ *             hasOne: {
+ *                 model: 'Address',
+ *                 name : 'address'
+ *             }
  *         }
  *     });
  *
@@ -114,9 +117,11 @@
  *                 // ...
  *             ],
  *
- *             associations: [
- *                 { type: 'hasOne', model: 'Address', primaryKey: 'unique_id', foreignKey: 'addr_id' }
- *             ]
+ *             hasOne: {
+ *                 model     : 'Address', 
+ *                 primaryKey: 'unique_id',
+ *                 foreignKey: 'addr_id'
+ *             }
  *         }
  *     });
  *
@@ -277,9 +282,13 @@ Ext.define('Ext.data.association.HasOne', {
 
             this.set(foreignKey, value);
 
-            record = Model.cache[Model.generateCacheId(associatedModel.modelName, value)];
-            if (record) {
-                this[instanceName] = record;
+            if (value || value === 0) {
+                record = Model.cache[Model.generateCacheId(associatedModel.modelName, value)];
+                if (record) {
+                    this[instanceName] = record;
+                }
+            } else {
+                delete this[instanceName];
             }
 
             if (Ext.isFunction(options)) {
@@ -330,7 +339,7 @@ Ext.define('Ext.data.association.HasOne', {
                 options.success = function(rec){
                     model[instanceName] = rec;
                     if (success) {
-                        success.call(this, arguments);
+                        success.apply(this, arguments);
                     }
                 };
 
@@ -361,7 +370,7 @@ Ext.define('Ext.data.association.HasOne', {
         var inverse = this.getInverseAssociation(),
             newRecord = reader.read([associationData]).getRecords()[0];
 
-        record[this.getInstanceName()] = newRecord;
+        record[this.getSetterName()].call(record, newRecord);
 
         //if the inverse association was found, set it now on each record we've just created
         if (inverse) {

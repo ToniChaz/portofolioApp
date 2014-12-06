@@ -10,7 +10,7 @@ Ext.define('portofolio.view.Blog', {
     
     config: {
      title: 'Blog',
-     iconCls: 'star',
+     iconCls: 'news',
      
       items: [        
         {
