@@ -34,12 +34,12 @@
     },
     "resources": [
         "resources/loading",
+        "resources/images",
         "resources/icons",
         "resources/startup",
         "send-mail.php",
         "get-tweets.php",
-        "twitteroauth/twitteroauth.php",
-        "twitteroauth/OAuth.php"
+        "twitteroauth"
     ],
     "ignore": [
         ".gitignore",
